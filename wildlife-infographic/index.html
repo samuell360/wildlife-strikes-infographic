@@ -8,6 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      function setScale() {
+        var vw = window.innerWidth;
+        var scale = vw < 1100 ? (vw / 1080) : 1;
+        document.documentElement.style.setProperty('--mobile-scale', scale);
+      }
+      setScale();
+      window.addEventListener('resize', setScale);
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -131,3 +131,32 @@ body::before {
   body::before { display: none; }
   .infographic-container { width: 100%; }
 }
+
+/* Mobile scaling: shrink the entire infographic proportionally on smaller screens */
+/* The infographic is designed at 1080px fixed width for desktop and PDF export   */
+/* --mobile-scale is set by the inline script in index.html on every resize       */
+
+@media (max-width: 1100px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  body::before {
+    display: none; /* dot-grid bg uses position:fixed — hide on mobile */
+  }
+
+  .infographic-container {
+    width: 1080px !important;
+    max-width: 1080px !important;
+    transform-origin: top left;
+    transform: scale(var(--mobile-scale, 1));
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    /* Collapse the whitespace that transform:scale leaves in the document flow */
+    margin-bottom: calc((var(--mobile-scale, 1) - 1) * 5600px);
+  }
+}
