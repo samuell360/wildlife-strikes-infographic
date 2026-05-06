@@ -2,7 +2,7 @@
 
 A data journalism infographic built on the FAA National Wildlife Strike Database (1990-2023), covering 200,000+ commercial aviation strikes across the United States.
 
-**Live demo:** https://YOUR_VERCEL_URL_HERE
+**Live demo:** https://wildlife-strikes-infographic-o4u3tr1bn.vercel.app
 
 ![Preview](preview.png)
 
