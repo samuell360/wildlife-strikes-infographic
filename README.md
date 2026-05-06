@@ -67,4 +67,4 @@ Open http://localhost:5173
 
 ---
 
-*Built by Samuel | DTA 350 Capstone | Rollins College | 2026*
+*Built by Samuel | Supervised by Professor Jasser Jasser | DTA 350 Capstone | Rollins College | 2026*
