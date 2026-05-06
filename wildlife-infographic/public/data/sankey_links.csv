@@ -1,0 +1,154 @@
+source,target,value
+species:Canada goose,phase:Approach,445
+species:Canada goose,phase:Climb,221
+species:Canada goose,phase:Departure,1
+species:Canada goose,phase:Descent,10
+species:Canada goose,phase:En Route,41
+species:Canada goose,phase:Landing Roll,111
+species:Canada goose,phase:Local,1
+species:Canada goose,phase:Other,14
+species:Canada goose,phase:Take-off Run,111
+species:Gulls,phase:Approach,372
+species:Gulls,phase:Climb,323
+species:Gulls,phase:Descent,10
+species:Gulls,phase:En Route,32
+species:Gulls,phase:Landing Roll,75
+species:Gulls,phase:Local,2
+species:Gulls,phase:Other,14
+species:Gulls,phase:Take-off Run,225
+species:Hawks,phase:Approach,116
+species:Hawks,phase:Climb,69
+species:Hawks,phase:Departure,1
+species:Hawks,phase:Descent,3
+species:Hawks,phase:En Route,18
+species:Hawks,phase:Landing Roll,28
+species:Hawks,phase:Local,1
+species:Hawks,phase:Other,4
+species:Hawks,phase:Take-off Run,51
+species:Other,phase:Approach,2290
+species:Other,phase:Climb,1308
+species:Other,phase:Departure,38
+species:Other,phase:Descent,93
+species:Other,phase:En Route,266
+species:Other,phase:Landing Roll,588
+species:Other,phase:Local,9
+species:Other,phase:Other,735
+species:Other,phase:Take-off Run,821
+species:Red-tailed hawk,phase:Approach,170
+species:Red-tailed hawk,phase:Climb,96
+species:Red-tailed hawk,phase:Departure,2
+species:Red-tailed hawk,phase:Descent,1
+species:Red-tailed hawk,phase:En Route,17
+species:Red-tailed hawk,phase:Landing Roll,61
+species:Red-tailed hawk,phase:Local,6
+species:Red-tailed hawk,phase:Other,20
+species:Red-tailed hawk,phase:Take-off Run,112
+species:Rock pigeon,phase:Approach,85
+species:Rock pigeon,phase:Climb,67
+species:Rock pigeon,phase:En Route,2
+species:Rock pigeon,phase:Landing Roll,42
+species:Rock pigeon,phase:Other,15
+species:Rock pigeon,phase:Take-off Run,82
+species:Turkey vulture,phase:Approach,220
+species:Turkey vulture,phase:Climb,146
+species:Turkey vulture,phase:Descent,1
+species:Turkey vulture,phase:En Route,62
+species:Turkey vulture,phase:Landing Roll,19
+species:Turkey vulture,phase:Local,3
+species:Turkey vulture,phase:Other,9
+species:Turkey vulture,phase:Take-off Run,27
+species:Unknown bird,phase:Approach,2844
+species:Unknown bird,phase:Climb,1694
+species:Unknown bird,phase:Departure,52
+species:Unknown bird,phase:Descent,242
+species:Unknown bird,phase:En Route,494
+species:Unknown bird,phase:Landing Roll,290
+species:Unknown bird,phase:Local,36
+species:Unknown bird,phase:Other,1558
+species:Unknown bird,phase:Take-off Run,667
+species:White-tailed deer,phase:Approach,87
+species:White-tailed deer,phase:Climb,38
+species:White-tailed deer,phase:Departure,2
+species:White-tailed deer,phase:Landing Roll,650
+species:White-tailed deer,phase:Local,7
+species:White-tailed deer,phase:Other,19
+species:White-tailed deer,phase:Take-off Run,227
+phase:Approach,component:Engine,1507
+phase:Approach,component:Fuselage,308
+phase:Approach,component:Landing Gear,263
+phase:Approach,component:Lights,161
+phase:Approach,component:None/Unknown,880
+phase:Approach,component:Nose/Radome,588
+phase:Approach,component:Other,342
+phase:Approach,component:Tail,269
+phase:Approach,component:Wing/Rotor,2311
+phase:Climb,component:Engine,1686
+phase:Climb,component:Fuselage,157
+phase:Climb,component:Landing Gear,92
+phase:Climb,component:Lights,41
+phase:Climb,component:None/Unknown,442
+phase:Climb,component:Nose/Radome,309
+phase:Climb,component:Other,184
+phase:Climb,component:Tail,92
+phase:Climb,component:Wing/Rotor,959
+phase:Departure,component:Engine,24
+phase:Departure,component:Fuselage,4
+phase:Departure,component:Landing Gear,8
+phase:Departure,component:Lights,1
+phase:Departure,component:None/Unknown,11
+phase:Departure,component:Nose/Radome,7
+phase:Departure,component:Other,17
+phase:Departure,component:Tail,3
+phase:Departure,component:Wing/Rotor,21
+phase:Descent,component:Engine,73
+phase:Descent,component:Fuselage,32
+phase:Descent,component:Landing Gear,4
+phase:Descent,component:Lights,4
+phase:Descent,component:None/Unknown,97
+phase:Descent,component:Nose/Radome,47
+phase:Descent,component:Other,15
+phase:Descent,component:Tail,14
+phase:Descent,component:Wing/Rotor,74
+phase:En Route,component:Engine,94
+phase:En Route,component:Fuselage,45
+phase:En Route,component:Landing Gear,9
+phase:En Route,component:Lights,12
+phase:En Route,component:None/Unknown,159
+phase:En Route,component:Nose/Radome,70
+phase:En Route,component:Other,46
+phase:En Route,component:Tail,55
+phase:En Route,component:Wing/Rotor,442
+phase:Landing Roll,component:Engine,488
+phase:Landing Roll,component:Fuselage,68
+phase:Landing Roll,component:Landing Gear,225
+phase:Landing Roll,component:Lights,48
+phase:Landing Roll,component:None/Unknown,175
+phase:Landing Roll,component:Nose/Radome,118
+phase:Landing Roll,component:Other,208
+phase:Landing Roll,component:Tail,37
+phase:Landing Roll,component:Wing/Rotor,497
+phase:Local,component:Engine,14
+phase:Local,component:Landing Gear,2
+phase:Local,component:None/Unknown,8
+phase:Local,component:Nose/Radome,2
+phase:Local,component:Other,7
+phase:Local,component:Tail,1
+phase:Local,component:Wing/Rotor,31
+phase:Other,component:Engine,919
+phase:Other,component:Fuselage,52
+phase:Other,component:Landing Gear,44
+phase:Other,component:Lights,100
+phase:Other,component:None/Unknown,162
+phase:Other,component:Nose/Radome,59
+phase:Other,component:Other,155
+phase:Other,component:Tail,159
+phase:Other,component:Wing/Rotor,738
+phase:Take-off Run,component:Engine,1341
+phase:Take-off Run,component:Fuselage,43
+phase:Take-off Run,component:Landing Gear,160
+phase:Take-off Run,component:Lights,26
+phase:Take-off Run,component:None/Unknown,165
+phase:Take-off Run,component:Nose/Radome,115
+phase:Take-off Run,component:Other,145
+phase:Take-off Run,component:Tail,28
+phase:Take-off Run,component:Wing/Rotor,300

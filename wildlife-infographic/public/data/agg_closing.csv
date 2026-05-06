@@ -1,0 +1,8 @@
+metric,value
+total_cost_infl_adj_all_damaging,31601300.0
+total_cost_infl_adj_SD_only,2297200.0
+aircraft_destroyed,62
+total_aos,1196090
+total_injuries,223
+total_fatalities,24
+cost_coverage_note,cost fields cover 710 of 18619 damaging strike records (severely underreported)

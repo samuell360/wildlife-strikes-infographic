@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Large raw data files (re-generate with process_strikes.py)
+wildlife-infographic/public/data/wildlife_strikes_clean.csv
+wildlife-infographic/public/data/strike_components_long.csv
+
+# Export artifacts (re-generate with export_png.js)
+wildlife-infographic/Final_Infographic.png
+wildlife-infographic/Final_Infographic.pdf
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config
+*.local

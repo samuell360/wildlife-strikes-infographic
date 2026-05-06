@@ -1,0 +1,133 @@
+:root {
+  --bg-primary: #0F1923;
+  --bg-surface: #1B3A4B;
+  --color-safe: #5DCAA5;
+  --color-warning: #F2A623;
+  --color-danger: #E8593C;
+  --text-primary: #C2D1DC;
+  --text-secondary: #7A8F9E;
+  --text-highlight: #FFFFFF;
+  --border-subtle: rgba(194, 209, 220, 0.18);
+  --font-display: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Hard reset — prevents UA margin/padding from causing blank space above header */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--bg-primary);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Browser UA gives h1 a top margin — kill it */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(194, 209, 220, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+.infographic-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.section {
+  position: relative;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(194, 209, 220, 0.08);
+  background-color: var(--bg-primary);
+}
+
+/* Quick Win 4: even sections get a slightly darker bg */
+.section-even {
+  background-color: #0D1B2A;
+}
+
+/* FIX 5: section numbers removed entirely */
+
+.section-label {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-highlight);
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* Waffle pulse — coral squares only */
+@keyframes wafflePulse {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+
+.waffle-danger {
+  transform-origin: center;
+  animation: wafflePulse 2.5s ease-in-out infinite;
+}
+
+/* Waffle reveal animation for safe squares */
+@keyframes waffleReveal {
+  from { opacity: 0; transform: scale(0.5); }
+  to   { opacity: 0.2; transform: scale(1); }
+}
+
+/* Waffle pop for danger squares */
+@keyframes wafflePop {
+  0%   { opacity: 0; transform: scale(0); }
+  70%  { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0.85; transform: scale(1); }
+}
+
+/* Print / export */
+@media print {
+  body::before { display: none; }
+  .infographic-container { width: 100%; }
+}
