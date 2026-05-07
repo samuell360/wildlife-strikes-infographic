@@ -21,11 +21,9 @@ export default function Section5Map() {
   useEffect(() => {
     if (!containerRef.current) return;
     const measure = () => {
-      const w = containerRef.current.getBoundingClientRect().width;
-      // Clamp to desktop size: CSS transform scales the container visually on
-      // mobile, so getBoundingClientRect() returns the scaled size. Always render
-      // at full desktop width and let the transform handle the visual scaling.
-      if (w > 0) setChartW(Math.max(Math.floor(w), 800));
+      // offsetWidth = layout width, unaffected by CSS transform on parent.
+      const w = containerRef.current.offsetWidth;
+      if (w > 0) setChartW(Math.max(w, 800));
     };
     measure();
     const ro = new ResizeObserver(measure);

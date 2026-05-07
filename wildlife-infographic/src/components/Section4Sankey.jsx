@@ -27,11 +27,10 @@ export default function Section4Sankey() {
   useEffect(() => {
     if (!containerRef.current) return;
     const measure = () => {
-      const w = containerRef.current.getBoundingClientRect().width;
-      // Clamp to desktop size: on mobile the container is scaled down via CSS
-      // transform, so getBoundingClientRect() returns the scaled size. We always
-      // want to render at full desktop width and let the transform handle scaling.
-      if (w > 0) setChartW(Math.max(Math.floor(w), 1040));
+      // offsetWidth = layout width, unaffected by CSS transform on parent.
+      // getBoundingClientRect() would return the visually scaled size on mobile.
+      const w = containerRef.current.offsetWidth;
+      if (w > 0) setChartW(Math.max(w, 1040));
     };
     measure();
     const ro = new ResizeObserver(measure);
