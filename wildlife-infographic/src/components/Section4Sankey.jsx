@@ -28,7 +28,10 @@ export default function Section4Sankey() {
     if (!containerRef.current) return;
     const measure = () => {
       const w = containerRef.current.getBoundingClientRect().width;
-      if (w > 0) setChartW(Math.floor(w));
+      // Clamp to desktop size: on mobile the container is scaled down via CSS
+      // transform, so getBoundingClientRect() returns the scaled size. We always
+      // want to render at full desktop width and let the transform handle scaling.
+      if (w > 0) setChartW(Math.max(Math.floor(w), 1040));
     };
     measure();
     const ro = new ResizeObserver(measure);

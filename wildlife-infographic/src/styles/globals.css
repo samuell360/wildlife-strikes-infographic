@@ -156,7 +156,5 @@ body::before {
     transform: scale(var(--mobile-scale, 1));
     margin-left: 0 !important;
     margin-right: 0 !important;
-    /* Collapse the whitespace that transform:scale leaves in the document flow */
-    margin-bottom: calc((var(--mobile-scale, 1) - 1) * 5600px);
   }
 }
