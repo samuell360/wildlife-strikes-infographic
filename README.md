@@ -7,7 +7,7 @@
 
 Commercial aircraft in the U.S. collide with wildlife 21 times per day. The FAA has tracked every reported strike since 1990, but that data has only ever existed as a 288,810-row government spreadsheet that nobody outside aviation safety has ever seen. I took the full dataset and turned it into a visual story anyone can read in about 3 minutes.
 
-[**(https://wildlife-strikes-infographic-o4u3tr1bn.vercel.app)**
+*[(https://wildlife-strikes-infographic-o4u3tr1bn.vercel.app)]*
 
 ![Infographic Preview](./preview.png)
 
